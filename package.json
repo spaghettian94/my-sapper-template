@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "name": "sapper-app",
   "description": "Sapper App",
   "version": "0.0.1",
