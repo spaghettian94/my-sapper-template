@@ -13,7 +13,7 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 const preProcessors = {
-	css: true
+	scss: true
 };
 
 module.exports = {
@@ -68,7 +68,14 @@ module.exports = {
 							dev
 						}
 					}
-				}
+				},
+				{
+			    test: /\.s?css$/,
+			    use: [
+			      'css-loader',
+						'sass-loader'
+					]
+			  }
 			]
 		},
 		mode: process.env.NODE_ENV,
