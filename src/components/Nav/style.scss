@@ -1,7 +1,7 @@
 nav {
+  padding: 0 1em;
   border-bottom: 1px solid rgba(255, 62, 0, 0.1);
   font-weight: 300;
-  padding: 0 1em;
 }
 
 ul {
@@ -11,7 +11,7 @@ ul {
 
 /* clearfix */
 ul::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -22,22 +22,22 @@ li {
 }
 
 .selected {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 
 .selected::after {
+  content: '';
+  display: block;
   position: absolute;
-  content: "";
+  bottom: -1px;
   width: calc(100% - 1em);
   height: 2px;
   background-color: rgb(255, 62, 0);
-  display: block;
-  bottom: -1px;
 }
 
 a {
-  text-decoration: none;
-  padding: 1em 0.5em;
   display: block;
+  padding: 1em 0.5em;
+  text-decoration: none;
 }

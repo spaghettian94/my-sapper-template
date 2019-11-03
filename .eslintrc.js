@@ -10,18 +10,8 @@ module.exports = {
     node: true,
     'cypress/globals': true
   },
-  extends: [
-    'eslint:recommended',
-    'google',
-    'plugin:cypress/recommended',
-    'plugin:prettier/recommended'
-  ],
-  plugins: [
-    'svelte3',
-    'import',
-    'cypress',
-    'prettier'
-  ],
+  extends: ['eslint:recommended', 'google', 'plugin:cypress/recommended', 'plugin:prettier/recommended'],
+  plugins: ['svelte3', 'import', 'cypress', 'prettier'],
   settings: {
     'import/resolver': {
       node: {
