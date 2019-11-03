@@ -10,17 +10,19 @@ module.exports = {
     node: true
   },
   extends: [
-    "eslint:recommended",
-    'google'
+    'eslint:recommended',
+    'google',
+    'plugin:prettier/recommended'
   ],
   plugins: [
+    'prettier',
     'svelte3',
-    "import"
+    'import'
   ],
   settings: {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js"]
+    'import/resolver': {
+      node: {
+        extensions: ['.js']
       }
     }
   },
@@ -31,21 +33,26 @@ module.exports = {
       rules: {
         'import/first': 0,
         'import/no-duplicates': 0,
-        'import/no-mutable-exports': 0,
+        'import/no-mutable-exports': 0
       }
     }
   ],
   rules: {
-    "comma-dangle": "off",
-    "func-names": "off",
-    "max-len": "off",
-    "no-console": "off",
-    "no-debugger": "off",
-    "no-invalid-this": "off",
-    "no-extend-native": "off",
-    "import/order": "error",
-    "import/extensions": ["error", "never", {
-      "json": "always"
-    }],
+    'comma-dangle': 'off',
+    'func-names': 'off',
+    'max-len': 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'no-invalid-this': 'off',
+    'no-extend-native': 'off',
+    'prettier/prettier': 1,
+    'import/order': 'error',
+    'import/extensions': [
+      'error',
+      'never',
+      {
+        json: 'always'
+      }
+    ]
   }
-}
+};
