@@ -12,13 +12,13 @@
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
     "lint": "npm-run-all -c lint:*",
-    "lint:eslint": "eslint **/*.js",
-    "lint:stylelint": "stylelint **/*.{css,scss}",
-    "lint:prettier": "prettier --check **/*.{js,scss,svelte}",
+    "lint:eslint": "eslint '**/*.js'",
+    "lint:stylelint": "stylelint '**/*.{css,scss}'",
+    "lint:prettier": "prettier --check '**/*.{js,scss,svelte}'",
     "format": "npm-run-all -c format:*",
-    "format:eslint": "eslint --fix **/*.js",
-    "format:stylelint": "stylelint --fix **/*.{css,scss}",
-    "format:prettier": "prettier --write **/*.{js,scss,svelte}"
+    "format:eslint": "eslint --fix '**/*.js'",
+    "format:stylelint": "stylelint --fix '**/*.{css,scss}'",
+    "format:prettier": "prettier --write '**/*.{js,scss,svelte}'"
   },
   "dependencies": {
     "compression": "^1.7.1",

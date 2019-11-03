@@ -19,6 +19,9 @@
     "block-closing-brace-newline-after": [ "always", {
       ignoreAtRules: ['keyframes', 'import', 'extend', 'at-root', 'debug', 'warn', 'error', 'if', 'else', 'for', 'each', 'while', 'mixin', 'include', 'content', 'return', 'function']
     }],
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": [ true, {
+      ignorePseudoClasses: [ "global" ]
+    }]
   }
 }
