@@ -10,7 +10,15 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "test": "run-p --race dev cy:run",
+    "lint": "npm-run-all -c lint:*",
+    "lint:eslint": "eslint **/*.js",
+    "lint:stylelint": "stylelint **/*.{css,scss}",
+    "lint:prettier": "prettier --check **/*.{js,scss,svelte}",
+    "format": "npm-run-all -c format:*",
+    "format:eslint": "eslint --fix **/*.js",
+    "format:stylelint": "stylelint --fix **/*.{css,scss}",
+    "format:prettier": "prettier --write **/*.{js,scss,svelte}"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -33,6 +41,10 @@
     "sapper": "^0.27.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-property-sort-order-smacss": "^5.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.12.1",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
     "svelte-preprocess": "^3.2.2",
