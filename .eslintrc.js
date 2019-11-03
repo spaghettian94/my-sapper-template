@@ -7,17 +7,20 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    node: true
+    node: true,
+    'cypress/globals': true
   },
   extends: [
     'eslint:recommended',
     'google',
+    'plugin:cypress/recommended',
     'plugin:prettier/recommended'
   ],
   plugins: [
-    'prettier',
     'svelte3',
-    'import'
+    'import',
+    'cypress',
+    'prettier'
   ],
   settings: {
     'import/resolver': {
