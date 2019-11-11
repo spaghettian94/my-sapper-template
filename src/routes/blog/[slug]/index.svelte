@@ -17,9 +17,7 @@
   export let post;
 </script>
 
-<style lang="scss" src="./style.scss" scoped>
-
-</style>
+<style lang="scss" src="./style.scss" scoped></style>
 
 <svelte:head>
   <title>{post.title}</title>

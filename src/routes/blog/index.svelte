@@ -12,9 +12,7 @@
   export let posts;
 </script>
 
-<style lang="scss" src="./style.scss" scoped>
-
-</style>
+<style lang="scss" src="./style.scss" scoped></style>
 
 <svelte:head>
   <title>Blog</title>
