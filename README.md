@@ -1,5 +1,7 @@
 * fix webpack hot-reloading
 * add SCSS preload
+* enable esLint
+* enable prettier
 
 
 # sapper-template
