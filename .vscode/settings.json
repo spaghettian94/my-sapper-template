@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.svelte": "html"
+    },
+    "vsicons.associations.files": [
+        { "icon": "svelte", "extensions": ["svelte"] }
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "html",
+            "autoFix": false
+        }
+    ]
+}

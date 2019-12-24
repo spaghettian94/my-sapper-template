@@ -24,6 +24,11 @@ overrides.js = {
   plugins: ['prettier']
 };
 
+overrides.js = {
+  files: ['**/*.html'],
+  extends: ['plugin:prettier/recommended', "html"]
+}
+
 overrides.cypress = {
   files: ['cypress/**/*.js'],
   env: {
@@ -53,7 +58,7 @@ module.exports = {
       }
     }
   },
-  overrides: Object.keys(overrides).map((key) => overrides[key]),
+  overrides: {...overrides},
   rules: {
     'comma-dangle': 'off',
     'func-names': 'off',
